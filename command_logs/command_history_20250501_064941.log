@@ -1,0 +1,71 @@
+[2025-05-01 06:49:41] [/workspaces/CS190-ICE4] source .devcontainer/shell.sh
+[2025-05-01 06:51:40] [/workspaces/CS190-ICE4/exercise] cd exercise/
+[2025-05-01 06:51:50] [/workspaces/CS190-ICE4/exercise] ls > output.txt
+[2025-05-01 06:52:17] [/workspaces/CS190-ICE4] cd ..
+[2025-05-01 06:52:38] [/workspaces/CS190-ICE4] cat output.txt
+[2025-05-01 06:52:47] [/workspaces/CS190-ICE4/exercise] cd exercise/
+[2025-05-01 06:52:50] [/workspaces/CS190-ICE4/exercise] cat output.txt 
+[2025-05-01 06:53:04] [/workspaces/CS190-ICE4/exercise] invalid_command 2> error.log  # [3][10]
+[2025-05-01 06:53:19] [/workspaces/CS190-ICE4/exercise] cat error.log 
+[2025-05-01 06:53:25] [/workspaces/CS190-ICE4] cd ..
+[2025-05-01 06:54:47] [/workspaces/CS190-ICE4/exercise] cd exercise/
+[2025-05-01 06:54:51] [/workspaces/CS190-ICE4/exercise] ls 
+[2025-05-01 06:54:59] [/workspaces/CS190-ICE4/exercise] ls | wc -1
+[2025-05-01 06:55:08] [/workspaces/CS190-ICE4/exercise] ls | wc -l  # [4][11]
+[2025-05-01 06:55:15] [/workspaces/CS190-ICE4/exercise] ls | wc -l
+[2025-05-01 06:55:49] [/workspaces/CS190-ICE4/exercise] ls | grep '\.txt$'
+[2025-05-01 06:56:15] [/workspaces/CS190-ICE4/exercise] sort duplicates.txt | uniq
+[2025-05-01 06:56:31] [/workspaces/CS190-ICE4/exercise] sort -u duplicates.txt 
+[2025-05-01 06:57:37] [/workspaces/CS190-ICE4/exercise] echo "Number of Files: $(ls | wc -1)"
+[2025-05-01 06:57:47] [/workspaces/CS190-ICE4/exercise] echo "Number of files: $(ls | wc -l)"  # [4][11]
+[2025-05-01 06:57:54] [/workspaces/CS190-ICE4/exercise] echo "Number of files: $(ls | wc -l)"
+[2025-05-01 06:58:01] [/workspaces/CS190-ICE4/exercise] echo "Number of Files: $(ls | wc -l)"
+[2025-05-01 06:58:17] [/workspaces/CS190-ICE4/exercise] grep "Duplicate" <<< "$(cat duplicates.txt)"  # [13]
+[2025-05-01 06:58:22] [/workspaces/CS190-ICE4/exercise] grep "Duplicate" <<< "$(cat duplicates.txt)"
+[2025-05-01 06:58:42] [/workspaces/CS190-ICE4/exercise] grep "Duplicate" duplicates.txt
+[2025-05-01 06:59:03] [/workspaces/CS190-ICE4/exercise] man grep
+[2025-05-01 07:03:05] [/workspaces/CS190-ICE4/exercise] cat << EOF > message.txt This is a multi line message Line 2 Line 3! EOF
+
+$$
+
+cat << EOF > message.txt This is a multi line message Line 2 Line 3! EOF
+
+$$
+
+cat << EOF > message.txt
+This is a multi-line message.
+Line 2.
+Line 3.
+EOF  # [13]
+[2025-05-01 07:03:10] [/workspaces/CS190-ICE4/exercise] cat << EOF > message.txt This is a multi line message Line 2 Line 3! EOF
+
+$$
+
+cat << EOF > message.txt This is a multi line message Line 2 Line 3! EOF
+
+$$
+
+cat << EOF > message.txt
+This is a multi-line message.
+Line 2.
+Line 3.
+EOF  # [13]
+[2025-05-01 07:03:36] [/workspaces/CS190-ICE4/exercise] cat << EOF > message.txt
+Your first line
+Your second line
+EOF  # MUST be alone on its own line, no spaces before/after
+[2025-05-01 07:03:53] [/workspaces/CS190-ICE4/exercise] cat << EOF > message.txt
+
+Line 1
+Line 2
+EOF
+[2025-05-01 07:04:01] [/workspaces/CS190-ICE4/exercise] cat << EOF > message.txt
+
+Line 1
+Line 2
+EOF
+[2025-05-01 07:04:06] [/workspaces/CS190-ICE4/exercise] cat message.txt 
+[2025-05-01 07:04:26] [/workspaces/CS190-ICE4] cd ..
+[2025-05-01 07:04:30] [/workspaces/CS190-ICE4/exercise] cd exercise/
+[2025-05-01 07:05:00] [/workspaces/CS190-ICE4/exercise] diff -rq dir1 dir2
+[2025-05-01 07:05:46] [/workspaces/CS190-ICE4/exercise] diff -r dir1 dir2
